@@ -1,0 +1,22 @@
+import java.util.*;
+class SumPair{
+public static void main(String [] abu){
+Scanner s=new Scanner(System.in);
+int n=s.nextInt();
+int a[]=new int[n];
+for(int i=0;i<n;i++){
+	a[i]=s.nextInt();
+}
+int target=s.nextInt();
+for(int i=0;i<n;i++){
+	
+	for(int j=i+1;j<n;j++){
+		
+		if(a[i]+a[j]==target){
+			System.out.println(a[i]+" "+a[j]);
+		}
+	}
+}
+
+}
+}
